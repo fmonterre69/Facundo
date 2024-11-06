@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Flame</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Logo.png.jpeg" alt="Logo The Flame" class="logo">
+            <h1>The Flame</h1>
+        </div>
+        <div class="cart">
+            <span>Cart: <span id="cart-count">0</span> items</span>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Formulario de inicio de sesión -->
+        <section class="login-section">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Ingresar</button>
+            </form>
+            <p id="loginMessage"></p>
+        </section>
+
+        <!-- Sección de productos -->
+        <section class="products" id="productSection" style="display: none;">
+            <h2>Product List</h2>
+            <table id="productTable" class="display">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Categoría</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se insertarán los productos -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Total: $<span id="total-price">0.00</span></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.7/js/dataTables.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

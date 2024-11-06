@@ -1,0 +1,106 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* Fondo en tono marrón claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #3e2f28; /* Marrón oscuro */
+    padding: 20px;
+    border-bottom: 2px solid #8c7851;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #d1e7dd; /* Verde suave */
+    text-transform: uppercase; /* Todo en mayúsculas */
+}
+
+.cart {
+    font-size: 1.1em;
+    color: #d1e7dd;
+}
+
+.cart span {
+    font-weight: 500;
+}
+
+/* Sección de inicio de sesión */
+.login-section {
+    text-align: center;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 300px;
+    background-color: #8c7851; /* Marrón suave */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-section input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+}
+
+button {
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #3e2f28; /* Marrón oscuro */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #5a4533;
+}
+
+#loginMessage {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* Estilos para la sección de productos */
+.products {
+    text-align: center;
+    margin: 20px;
+}
+
+footer {
+    background-color: #3e2f28;
+    color: #d1e7dd;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilo para las filas seleccionadas */
+.selected {
+    background-color: #c4e3cb; /* Color verde suave */
+}
